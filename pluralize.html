@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pluralize</title>
+</head>
+<body>
+    <script>
+        function pluralize(word){
+            var plural = '';
+            if(word == 'mouse'){
+                plural = 'mice';
+            }else if (word == 'automaton') {
+                plural = 'automata';
+            }else if (word == 'moose'){
+                plural = 'moose';
+            }else{
+                plural = word + 's';
+            }
+            return plural;
+        }
+        var userInput = prompt('Word please');
+        userInput = pluralize(userInput);
+        console.log(userInput);
+
+    </script>
+</body>
+</html>
