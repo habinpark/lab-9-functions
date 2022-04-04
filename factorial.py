@@ -8,5 +8,6 @@ def factorialize(n):
         for i in range(1,n + 1):
             factorial = factorial*i
     return factorial
-
-print((factorialize(int(input('Number please: ')))))
+number = int(input('Number please: '))
+numberStr = str(number)
+print(str(number) + '! = ' +  str(factorialize(number)))
